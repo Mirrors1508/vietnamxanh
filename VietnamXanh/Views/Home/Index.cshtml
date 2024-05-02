@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Việt Nam Xanh | Trang chủ";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<partial name="_SlidePartial" />
+
+<div class="container main-body">
+    <div class="row ">
+        <div class="col-md-6" id="article-by-location">
+        </div>
+        <div class="col-md-6" id="location-selector">
+            <partial name="/Views/Home/SVGMap.cshtml" />
+
+        </div>
+    </div>
+</div>
+@section Scripts {
+
+    <script type="text/javascript" src="js/index.js" asp-append-version="true"></script>
+
+
+}
+@section Head {
+    <style>
+        .main-body
+    </style>
+
+
+}

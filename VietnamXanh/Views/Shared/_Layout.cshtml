@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] | VietnamXanh</title>
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="http://vietnamxanh.com/" />
+    <meta property="og:locale" content="vi_VN" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="@ViewData["Title"] | VietnamXanh" />
+    <meta property="og:url" content="http://vietnamxanh.com/" />
+    <meta property="og:site_name" content="VietnamXanh" />
+    <meta name="twitter:card" content="summary_large_image" />
+    @await RenderSectionAsync("Head", required: false)
+
+  
+    <link type="image/x-icon" href="/images/logo.png" rel="shortcut icon">
+    <link rel="stylesheet" href="css/fontAwesome/css/font-awesome.min.css" media="all">
+    <link rel="stylesheet" href="css/bootstrap.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/select2.min.css">
+    <link rel="stylesheet" href="css/style.css" media="all">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" media="all">
+    <link type="text/css" rel="stylesheet" href="css/lightgallery.css">
+
+</head>
+<body>
+
+    <partial name="_MenuPartial" />
+
+    <section id="main">
+        @RenderBody()
+    </section>
+
+    <partial name="_FooterPartial" />
+
+    <script type="text/javascript" src="lib/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="lib/swiper.min.js"></script>
+    <script type="text/javascript" src="lib/select2.min.js"></script>
+    <script type="text/javascript" src="lib/moment.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="lib/daterangepicker.min.js"></script>
+    <script type="text/javascript" src="lib/common.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
