@@ -9,3 +9,9 @@
 /Lib.Ultilities/obj
 /VietnamXanh/bin/Debug/net6.0
 /VietnamXanh/obj
+/Lib.DAL/bin/Debug/net6.0
+/Lib.Entities/bin/Debug/net6.0
+/Lib.Repositories/bin/Debug/net6.0
+/Lib.Ultilities/bin/Debug/net6.0
+/VietnamXanh/bin/Release/net6.0
+/VietnamXanh/.config
