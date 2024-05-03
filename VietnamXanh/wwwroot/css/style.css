@@ -1,13 +1,13 @@
 
 :root {
     --yellow: #e0ad1f;
-    --green: #FF5B00;
+    --green: #070BA0;
     --green: #00A86B;
     --blue: #076DB6;
     --white: #fff;
     --prink: #ff0063;
     --purple: #7e6fda;
-    --colormain: #FF5B00;
+    --colormain: #070BA0;
     --white: #fff;
     --dark: #282B3E;
     --gray600: #495261;
@@ -980,10 +980,10 @@ button {
     border-radius: 10px;
     padding: 0 24px;
     text-align: center;
-    background: #FF5B00;
+    background: linear-gradient(to right, #b4e391 0%,#61c419 50%,#b4e391 100%);
     -webkit-transition: 0.2s all;
     transition: 0.2s all;
-    border: 1px solid #FF5B00;
+    border: 1px solid var(--green);
     cursor: pointer
 }
 
@@ -1063,8 +1063,8 @@ button {
 
         .btn-default.white:hover {
             color: #fff;
-            background: #FF5B00;
-            border: 1px solid #FF5B00
+            background: #070BA0;
+            border: 1px solid #070BA0
         }
 
     .btn-default.blue-white {
@@ -1109,8 +1109,8 @@ button {
 
     .btn-default:hover {
         color: #fff !important;
-        background: #FF5B00;
-        border: 1px solid #FF5B00
+        background: #070BA0;
+        border: 1px solid #070BA0
     }
 
 .flex {
@@ -1320,7 +1320,7 @@ button {
     .head-category .time-flex span {
         margin-left: 12px;
         position: relative;
-        background: #FF5B00;
+        background: #070BA0;
         border-radius: 4px;
         width: 28px;
         height: 28px;
@@ -1367,8 +1367,8 @@ button {
         }
 
         .head-category .time-going .item.active {
-            background: #FF5B00;
-            border: 1px solid #FF5B00;
+            background: #070BA0;
+            border: 1px solid #070BA0;
             color: #fff
         }
 
@@ -1480,7 +1480,7 @@ button {
     }
 
         .tab-default a.active, .tab-default a:hover {
-            background: #FF5B00;
+            background: #070BA0;
             color: #fff
         }
 
@@ -1606,7 +1606,7 @@ button {
             }
 
             .article-itemt .article-thumb .tag .free {
-                background: #FF5B00;
+                background: #070BA0;
                 border-radius: 6px;
                 line-height: 24px;
                 padding: 0 4px;
@@ -1621,7 +1621,7 @@ button {
     }
 
         .article-itemt .article-content .tag-title span {
-            background: #FF5B00;
+            background: #070BA0;
             border-radius: 6px;
             font-size: 12px;
             line-height: 20px;
@@ -1681,7 +1681,7 @@ button {
         }
 
             .article-itemt .article-content .title_new .t-hotel {
-                color: #FF5B00
+                color: #070BA0
             }
 
         .article-itemt .article-content .date-post {
@@ -1778,7 +1778,7 @@ button {
     }
 
     .article-itemt .article-content .bottom-content .price .price-new {
-        color: #FF5B00;
+        color: #070BA0;
         font-size: 16px;
         font-weight: bold
     }
@@ -1808,7 +1808,7 @@ button {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    color: #FF5B00;
+    color: #070BA0;
     font-size: 12px
 }
 
@@ -2100,7 +2100,7 @@ button {
     }
 
 .confir_res {
-    padding-left: 26px;
+    padding-left: 30px;
     position: relative;
     cursor: pointer;
     display: block;
@@ -2500,7 +2500,7 @@ button {
         .form-search .input_search:focus, .form-search .input_search:active {
             outline: 0;
             box-shadow: none;
-            border: 1px solid #FF5B00
+            border: 1px solid #070BA0
         }
 
         .form-search .input_search::-webkit-input-placeholder {
@@ -2832,7 +2832,7 @@ button {
 
         .tr-add .plus:hover {
             color: #fff;
-            background: #FF5B00
+            background: var(--green)
         }
 
 .form-group {
@@ -2860,7 +2860,7 @@ textarea.form-control {
     .form-control:focus, .form-control:active {
         outline: 0;
         box-shadow: none;
-        border: 1px solid #FF5B00
+        border: 1px solid var(--green);
     }
 
 input.form-control {
@@ -3021,7 +3021,7 @@ select.form-control {
 .text-collapse {
     font-weight: 700;
     font-size: 12px;
-    color: #FF5B00;
+    color: #070BA0;
     padding-right: 16px;
     position: relative
 }
@@ -3390,7 +3390,7 @@ select.form-control {
         }
 
             .btn-on-off .switch input:checked + .slider {
-                background-color: #FF5B00
+                background-color: #070BA0
             }
 
                 .btn-on-off .switch input:checked + .slider:before {
@@ -3758,12 +3758,12 @@ select.form-control {
 }
 
 .lightpick__day.is-end-date, .lightpick__day.is-end-date:hover, .lightpick__day.is-start-date, .lightpick__day.is-start-date:hover {
-    background-color: #FF5B00;
+    background-color: #070BA0;
     background-image: none
 }
 
     .lightpick__day.is-start-date.is-in-range, .lightpick__day.is-end-date.is-in-range {
-        background-color: #FF5B00 !important;
+        background-color: #070BA0 !important;
         background-image: none
     }
 
@@ -4784,8 +4784,8 @@ input:checked + .form-selector-custom__value:after {
         height: 33px;
         line-height: 33px;
         border-radius: 10px;
-        background: #FF5B00;
-        border: 1px solid #FF5B00
+        background: #070BA0;
+        border: 1px solid #070BA0
     }
 
     .daterangepicker .drp-buttons .cancelBtn {
@@ -6437,11 +6437,11 @@ button.swiper-pagination-bullet {
     }
 
     .c100.orange .bar, .c100.orange .fill {
-        border-color: #FF5B00 !important
+        border-color: #070BA0 !important
     }
 
     .c100.orange:hover > span {
-        color: #FF5B00
+        color: #070BA0
     }
 
     .c100.orange.dark .bar, .c100.orange.dark .fill {
@@ -6814,7 +6814,7 @@ button.swiper-pagination-bullet {
             margin-left: 8px;
             background: #F1F5F9;
             border-radius: 10px;
-            background: #FF5B00;
+            background: #070BA0;
             color: #fff;
             display: none
         }
@@ -7376,7 +7376,11 @@ button.swiper-pagination-bullet {
 }
 
     .adv-footer .pc-footer {
-        background: #74993E;
+        background-color: #E8F8EE;
+        background-image: url(/images/background/background-footer-1.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        padding-top:50px;
     }
 
     .adv-footer .adv-content-footer {
@@ -8063,7 +8067,7 @@ button.swiper-pagination-bullet {
             }
 
             .wrap-search .fillter-location .list-address .header {
-                background: #FF5B00;
+                background: #070BA0;
                 padding: 5px 15px;
                 display: -webkit-box;
                 display: -webkit-flex;
@@ -8161,7 +8165,7 @@ button.swiper-pagination-bullet {
                             }
 
                                 .wrap-search .fillter-location .list-address .box-search .form-search .suggest-search ul li:hover {
-                                    background: #FF5B00;
+                                    background: #070BA0;
                                     color: #fff
                                 }
 
@@ -8177,7 +8181,7 @@ button.swiper-pagination-bullet {
 
                 .wrap-search .fillter-location .list-address .list-city ul .lbl {
                     padding: 5px 10px;
-                    color: #FF5B00;
+                    color: #070BA0;
                     text-transform: uppercase;
                     font-weight: bold
                 }
@@ -8191,7 +8195,7 @@ button.swiper-pagination-bullet {
                 }
 
                     .wrap-search .fillter-location .list-address .list-city ul li:hover {
-                        background: #FF5B00;
+                        background: #070BA0;
                         color: #fff
                     }
 
@@ -9453,7 +9457,7 @@ button.swiper-pagination-bullet {
         }
 
         .list-flight-information .item .flight-top .price .price-new {
-            color: #FF5B00;
+            color: #070BA0;
             font-size: 16px;
             font-weight: bold
         }
@@ -9691,7 +9695,7 @@ button.swiper-pagination-bullet {
         }
 
         .list-flight-information .item__v2 .wrap .price-new {
-            color: #FF5B00;
+            color: #070BA0;
             font-size: 18px;
             font-weight: bold;
             margin-left: 10px;
@@ -10617,7 +10621,7 @@ button.swiper-pagination-bullet {
 
             .nav-tabs-login .nav-item a.active {
                 color: #00264D;
-                border-bottom: 2px solid #FF5B00
+                border-bottom: 2px solid #070BA0
             }
 
 @media (max-width: 576px) {
@@ -10739,8 +10743,8 @@ button.swiper-pagination-bullet {
         }
 
         .item-info-flight .trip-info.min .price-all .status.pending {
-            background: #FF5B00;
-            border: 1px solid #FF5B00;
+            background: #070BA0;
+            border: 1px solid #070BA0;
             color: #fff
         }
 
@@ -11051,7 +11055,7 @@ button.swiper-pagination-bullet {
         .list-flight .item .flex-price .new, .list-flight .swiper-slide .flex-price .new {
             font-weight: 700;
             font-size: 18px;
-            color: #FF5B00
+            color: #070BA0
         }
 
 .list-flight .swiper-button-prev, .list-flight .swiper-button-next {
@@ -11704,7 +11708,7 @@ button.swiper-pagination-bullet {
         }
 
         .box-vote .count-vote .note-vote.orange ul li .bar .percent {
-            background: #FF5B00
+            background: #070BA0
         }
 
 .box-vote .slide-customer {
@@ -12511,7 +12515,7 @@ button.swiper-pagination-bullet {
     }
 
         .banner-tour .confir_res.circle input:checked ~ .checkmark {
-            border: 5px solid #FF5B00
+            border: 5px solid #070BA0
         }
 
 @media (max-width: 1280px) {
@@ -13300,10 +13304,3 @@ button.swiper-pagination-bullet {
         }
 }
 
-@media (max-width: 375px) {
-    .title-cate {
-        font-size: 20px
-    }
-}
-
-/*# sourceMappingURL=maps/style.css.map */
