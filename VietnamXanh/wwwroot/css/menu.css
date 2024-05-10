@@ -1,0 +1,109 @@
+﻿/** mobile-menu **/
+#mobile-menu {
+    position: fixed;
+    left: -100%;
+    top: 0 !important;
+    width: 300px;
+    height: 100%;
+    background: #fff;
+    z-index: -1;
+    opacity: 0;
+    overflow-y: auto;
+    padding-bottom: 45px;
+}
+
+    #mobile-menu .mobile-menu-body {
+        max-height: calc(100% - 68px);
+        overflow-y: auto;
+    }
+
+    #mobile-menu .mobile-menu-footer {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        background: #f4f4f4;
+    }
+
+@media (max-width: 1024px) {
+    #mobile-menu.active {
+        left: 0;
+        z-index: 99999;
+        opacity: 1;
+    }
+
+        #mobile-menu.active + .menu-overlay {
+            position: fixed;
+            left: 0;
+            top: 0 !important;
+            z-index: 9998;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, .5);
+        }
+
+    #mobile-menu .subheader {
+        display: block;
+    }
+}
+
+#mobile-menu .user-menu {
+    background: var(--header-background);
+    color: var(--header-color);
+    padding: 10px 15px;
+    --text-color: var(--header-color);
+}
+
+    #mobile-menu .user-menu .fas {
+        font-size: 24px;
+    }
+
+#mobile-menu .shop-policises {
+    flex-direction: column;
+    align-items: start;
+    align-items: flex-start !important;
+}
+
+    #mobile-menu .shop-policises li {
+        padding: 8px 10px;
+    }
+
+        #mobile-menu .shop-policises li + * {
+            margin: 0px;
+        }
+
+#mobile-menu [data-toggle-submenu] {
+    float: right;
+    width: 30px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#mobile-menu .navigation {
+    min-height: auto;
+}
+
+    #mobile-menu .navigation .menu-item.active .submenu {
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 0 !important;
+        width: 300px;
+    }
+
+#mobile-menu .toggle-submenu {
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-top: -15px;
+    background: #eee;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    color: var(--text-color);
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+#mobile-menu .navigation .submenu__list {
+    --col-menu: 1;
+}

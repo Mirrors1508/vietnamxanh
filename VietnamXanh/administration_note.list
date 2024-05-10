@@ -1,3 +1,6 @@
 ﻿DbAdmin Account:
 postgres 
 2024@mn13795
+
+Scaffold-DbContext "Server=103.163.216.42;Port=5432;User Id=postgres;Password=2024@mn13795;Database=VNMX;" Npgsql.EntityFrameworkCore.PostgreSQL -OutputDir Models -context DataContext -Project Lib.Entities -force
+
