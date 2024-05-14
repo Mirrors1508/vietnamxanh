@@ -1,163 +1,83 @@
 ﻿@{
     Layout = null;
 }
-
-<div id="mobile-menu" class="scroll " style="display:none;">
-    <div class="media d-flex user-menu">
-        <i class="fas fa-user-circle mr-3 align-self-center"></i>
-        <div class="media-body d-md-flex flex-column ">
-            <a rel="nofollow" href="/account/login" class="d-block" title="Tài khoản">
-                Tài khoản
-            </a>
-            <small>
-                <a href="/account/login" title="Đăng nhập" class="font-weight: light">
-                    Đăng nhập
-                </a>
-            </small>
-
-        </div>
-    </div>
-    <div class="mobile-menu-body scroll">
-        <nav class="h-100">
-            <ul class="navigation list-group list-group-flush scroll">
-                <li class="menu-item list-group-item">
-                    <a href="/working-gaming-gear" class="menu-item__link" title="Chuột-Bàn phím-Tai nghe">
-                        <img width="24" height="24" src="//bizweb.dktcdn.net/100/329/122/themes/940689/assets/menu_icon_1.png?1715331136100" alt="Chuột-Bàn phím-Tai nghe">
-                        <span>Chuột-Bàn phím-Tai nghe</span>
-                        <i class="float-right" data-toggle-submenu="">
-                            <svg class="icon">
-                                <use xlink:href="#icon-arrow"></use>
-                            </svg>
-                        </i>
-                    </a>
-
-                    <div class="submenu scroll">
-                        <div class="toggle-submenu d-lg-none d-xl-none">
-                            <i class="mr-3">
-                                <svg class="icon" style="transform: rotate(180deg)">
-                                    <use xlink:href="#icon-arrow"></use>
-                                </svg>
-                            </i>
-                            <span>Chuột-Bàn phím-Tai nghe </span>
-                        </div>
-                        <ul class="submenu__list">
-                            <li class="submenu__col">
-                                <span class="submenu__item submenu__item--main">
-                                    <a class="link" href="/chuot-gaming-van-phong" title="Chuột">Chuột</a>
-                                </span>
-
-                                <span class="submenu__item submenu__item">
-                                    <a class="link" href="/chuot-logitech" title="Logitech">Logitech</a>
-                                </span>
-
-                                <span class="submenu__item submenu__item">
-                                    <a class="link" href="/chuot-razer" title="Razer">Razer</a>
-                                </span>
-
-                                <span class="submenu__item submenu__item">
-                                    <a class="link" href="/chuot-asus" title="Asus">Asus</a>
-                                </span>
-
-                                <span class="submenu__item submenu__item">
-                                    <a class="link" href="/chuot-corsair" title="Corsair">Corsair</a>
-                                </span>
-
-                                <span class="submenu__item submenu__item">
-                                    <a class="link" href="/chuot-hyperx" title="HyperX">HyperX</a>
-                                </span>
-
-                                <span class="submenu__item submenu__item">
-                                    <a class="link" href="/chuot-dell" title="Dell">Dell</a>
-                                </span>
-
-                            </li>
-
-                            <li class="submenu__item submenu__item--main">
-                                <a class="link" href="/phu-kien-tai-nghe" title="Phụ kiện Tai nghe">Phụ kiện Tai nghe</a>
-                            </li>
-
-
-
-
-                            <li class="submenu__item submenu__item--main">
-                                <a class="link" href="/hop-qua-tang" title="Hộp quà tặng">Hộp quà tặng</a>
-                            </li>
-
-
-                        </ul>
-                    </div>
+<!--NAV PC-->
+<nav class="navbar navbar-expand-lg bg-light fixed-top nav-wide-device">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-pc" aria-controls="navbar-pc" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-pc">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
-
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                </li>
             </ul>
-        </nav>
-
-        <ul class="shop-policises list-unstyled d-flex align-items-center flex-wrap m-0 pr-0">
-            <li class="">
-                <a class="link" href="https://memoryzone.com.vn/huong-dan-thanh-toan" title="THANH TOÁN">
-                    THANH TOÁN
-                </a>
-            </li>
-            <li class="">
-                <a class="link" href="https://memoryzone.com.vn/huong-dan-tra-gop" title="TRẢ GÓP">
-                    TRẢ GÓP
-                </a>
-            </li>
-            
-        </ul>
-    </div>
-
-    <div class="mobile-menu-footer border-top w-100 d-flex align-items-center text-center">
-        <div class="hotline  w-50   p-2 ">
-            <a href="tel:02873013878" title="028 7301 3878">
-                Gọi điện <i class="fas fa-phone ml-3"></i>
-            </a>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
         </div>
-        <div class="messenger border-left p-2 w-50 border-left">
-
-            <a href="https://www.messenger.com/t/memoryzonevietnam/" title="https://www.messenger.com/t/memoryzonevietnam/">
-                Nhắn tin
-                <i class="fab fa-facebook-messenger ml-3"></i>
-            </a>
-        </div>
-
-    </div>
-</div>
-
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
     </div>
 </nav>
-@section Head {
+<!--NAV Mbile-->
 
-}
+<nav class="navbar navbar-light bg-light fixed-top nav-mobile">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Offcanvas dark navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbar-mobile" aria-controls="navbar-mobile">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-light" tabindex="-1" id="navbar-mobile" aria-labelledby="navbar-mobileLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="navbar-mobileLabel">Dark offcanvas</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex mt-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</nav>

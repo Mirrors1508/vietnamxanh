@@ -115,7 +115,7 @@ namespace Utilities
         {
             try
             {
-                Regex r = new Regex("(?:[^a-z0-9 ]|(?<=['\"])s)", RegexOptions.IgnoreCase | RegexOptions.CultureInvariant | RegexOptions.Compiled);
+                Regex r = new Regex("(?:[^a-z0-9_.@]|(?<=['\"])s)", RegexOptions.IgnoreCase | RegexOptions.CultureInvariant | RegexOptions.Compiled);
                 return r.Replace(input, String.Empty);
             }
             catch (Exception e)
@@ -123,7 +123,17 @@ namespace Utilities
                 return input ?? string.Empty;
             }
         }
-
+        public static string RemoveNonKeyBoardInputCharacter(string input)
+        {
+            try
+            {
+                return Regex.Replace(input, @"[^\u0000-\u007F]+", string.Empty);
+            }
+            catch (Exception e)
+            {
+                return input ?? string.Empty;
+            }
+        }
 
 
     }

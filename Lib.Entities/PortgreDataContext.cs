@@ -6,11 +6,11 @@ using System.Text;
 
 namespace ENTITIES.Models
 {
-    public class DataAccessContext : DataContext
+    public class PortgreDataContext : DataContext
     {
         private readonly string _connection;
 
-        public DataAccessContext(string connection)
+        public PortgreDataContext(string connection)
         {
             _connection = connection;
         }

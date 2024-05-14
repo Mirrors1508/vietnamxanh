@@ -26,8 +26,9 @@
 
 </head>
 <body>
+    <partial name="_MenuPartial" />
 
-    <section id="main">
+    <section id="main-mamagement" class="main-mamagement" >
         @RenderBody()
     </section>
 
@@ -40,6 +41,10 @@
     <script type="text/javascript" src="lib/bootstrap.min.js"></script>
     <script type="text/javascript" src="lib/daterangepicker.min.js"></script>
     <script type="text/javascript" src="lib/common.js"></script>
+    <script type="text/javascript" src="~/js/ajaxServices.js"></script>
+    <script type="text/javascript" src="~/js/constants.js"></script>
+    <script type="text/javascript" src="~/js/services.js"></script>
+
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

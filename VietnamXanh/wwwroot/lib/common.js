@@ -22,33 +22,7 @@
         }
     }
 
-    //backToTop
-    function backToTop() {
-        $(window).scroll(function() {
-            if ($(window).scrollTop() >= 200) {
-                $('#to_top').fadeIn();
-                $('.tp1-topnav').addClass('sticky');
-            } else {
-                $('#to_top').fadeOut();
-                $('.tp1-topnav').removeClass('sticky');
-            }
-        });
-
-
-        $("#to_top").click(function() {
-            $("html, body").animate({
-                scrollTop: 0
-            });
-            return false;
-        });
-        $(window).scroll(function() {
-            if ($(window).scrollTop() >= 40) {
-                $('.topnav ').addClass('sticky');
-            } else {
-                $('.topnav ').removeClass('sticky');
-            }
-        });
-    }
+    
     function swiper() {
         var slider_video = new Swiper('.main-swiper', {
             slidesPerView: 1,
@@ -70,7 +44,6 @@
     }
 
     $(document).ready(function () {
-        backToTop();
         swiper();
     })
    

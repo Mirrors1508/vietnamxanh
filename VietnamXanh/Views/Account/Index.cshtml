@@ -1,0 +1,52 @@
+﻿@{
+    ViewData["Title"] = "Đăng nhập VNX";
+    Layout = "~/Views/Shared/_AccountLayout.cshtml";
+    string url = (string)ViewBag.URL;
+}
+
+<div class="login-popup">
+    <div id="form-login" data-url="@url">
+        <div class="content_lightbox" id="panel-login">
+            <div class="head center">
+                <a class="logo" href="javascript:;" style=" margin-top: 20px; "><img width="140px" src="~/images/logo.png"></a>
+                <div style="margin-top:20px;margin-bottom:20px">Đăng nhập hệ thống quản lý</div>
+                <span id="validate-msg" class="field-validation-valid"></span>
+            </div>
+            <div class="form-default">
+                <div class="form-group">
+                    <input id="user-name" class="form-control login-input" type="text" name="user-name" placeholder="Tên tài khoản" value="">
+                    <span id="validate-username" class="field-validation-valid"></span>
+                </div>
+                <div class="form-group">
+                    <input id="password" class="form-control login-input" type="password" name="user-name" placeholder="Mật khẩu" value="">
+                    <span id="validate-password" class="field-validation-valid "></span>
+                </div>
+               
+                <div class="bottom-btn flex" style="justify-content: center;">
+                    <button  class="btn btn-login" style="background-color: var(--colormain);width: 90%;margin-bottom: 20px;"><i class="fa fa-sign-in"></i>Đăng nhập</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    <script src="/js/account.js" asp-append-version="true"></script>
+}
+@section Head {
+
+    <style>
+        .login-input{
+            margin-left: 5% !important;
+            width:90% !important;
+            padding: 10px !important;
+        }
+
+        .field-validation-valid {
+            margin-left:5%;
+            color: var(--red) !important;
+
+        }
+    </style>
+
+}

@@ -10,4 +10,14 @@
     <Folder Include="Models\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Lib.Entities\Lib.Entities.csproj" />
+    <ProjectReference Include="..\Lib.Repositories\Lib.Repositories.csproj" />
+    <ProjectReference Include="..\Lib.Ultilities\Lib.Ultilities.csproj" />
+  </ItemGroup>
+
 </Project>
