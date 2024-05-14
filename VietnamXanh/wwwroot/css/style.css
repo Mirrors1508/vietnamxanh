@@ -1143,7 +1143,7 @@ button {
     .adv-footer .pc-footer {
         background-color: #E8F8EE;
         background-image: url(/images/background/background-footer-1.png);
-        background-repeat: no-repeat;
+        background-repeat: round;
         background-size: 100%;
         padding-top: 50px;
     }
@@ -1465,20 +1465,35 @@ button {
     }
 /* NAV display*/
 
-@media (max-width: 1199px) {
+@media (min-width: 0px) {
+    .nav-mobile-logo {
+        display:none;
+    }
+}
+@media (min-width: 650px) {
     .nav-wide-device {
         display: none;
     }
 
+    .nav-mobile-logo {
+        display: flex;
+    }
+
     .nav-mobile {
         display: flex;
+    }
+
+    .main-mamagement {
+        padding-top: 80px;
     }
 }
 @media (min-width: 1200px) {
     .nav-wide-device {
         display: flex;
     }
-
+     .nav-mobile-logo {
+        display: flex;
+    }
     .nav-mobile {
         display: none;
     }
